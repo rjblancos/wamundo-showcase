@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WaMundo · Kusarive Solutions LLC</title>
+<meta name="description" content="Plataforma multi-inquilino de mensajería para negocios: envíos masivos y programados, bandeja multi-agente, IA y SMS por la SIM propia.">
+<style>
+:root{--bg:#fafaf7;--card:#fff;--txt:#1d1d1b;--suave:#5c5c57;--linea:#e7e5df;--acento:#1f8a5b;--acento-txt:#ffffff;--ok:#18794e}
+@media (prefers-color-scheme:dark){:root{--bg:#121211;--card:#1c1c1a;--txt:#efeee9;--suave:#a3a29b;--linea:#2e2d2a;--acento:#2fb37a;--ok:#4cc38a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.envoltura{max-width:1040px;margin:0 auto;padding:0 16px}
+header{padding:28px 0 8px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.marca{font-weight:800;font-size:1.15rem;letter-spacing:-.01em}
+.marca span{background:var(--acento);color:var(--acento-txt);border-radius:6px;padding:2px 7px;margin-right:6px}
+.idioma button{background:none;border:1px solid var(--linea);color:var(--txt);border-radius:999px;padding:4px 12px;cursor:pointer;font:inherit;font-size:.85rem}
+.idioma button[aria-pressed=true]{background:var(--txt);color:var(--bg)}
+.portada{padding:48px 0 24px}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.1;margin:0 0 16px;letter-spacing:-.02em}
+.lema{font-size:1.15rem;color:var(--suave);max-width:680px;margin:0}
+.estado{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-size:.9rem;color:var(--suave)}
+.estado i{width:9px;height:9px;border-radius:50%;background:var(--ok);display:inline-block}
+.cifras{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:32px 0 8px}
+.cifra{background:var(--card);border:1px solid var(--linea);border-radius:14px;padding:18px 20px}
+.cifra b{display:block;font-size:2rem;letter-spacing:-.02em}
+.cifra small{color:var(--suave)}
+.nota{font-size:.82rem;color:var(--suave);margin:4px 0 0}
+h2{font-size:1.5rem;margin:56px 0 16px;letter-spacing:-.01em}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.bloque{background:var(--card);border:1px solid var(--linea);border-radius:14px;padding:18px 20px}
+.bloque h3{margin:0 0 6px;font-size:1.02rem}
+.bloque p{margin:0;color:var(--suave);font-size:.95rem}
+.capturas{display:grid;grid-template-columns:2fr 1fr;gap:14px;align-items:start}
+.capturas figure{margin:0}
+.capturas img{width:100%;height:auto;border-radius:12px;border:1px solid var(--linea);display:block}
+.capturas figcaption{font-size:.85rem;color:var(--suave);margin-top:6px}
+.pila{display:grid;gap:14px}
+.flujo{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:.95rem}
+.flujo span{background:var(--card);border:1px solid var(--linea);border-radius:10px;padding:8px 12px}
+.flujo em{color:var(--suave);font-style:normal}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--linea);border-radius:14px;overflow:hidden}
+td{padding:12px 16px;border-top:1px solid var(--linea);vertical-align:top;font-size:.95rem}
+tr:first-child td{border-top:0}
+td:first-child{font-weight:700;white-space:nowrap;width:1%}
+.contacto{background:var(--card);border:1px solid var(--linea);border-radius:14px;padding:22px;display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center}
+.contacto a{color:var(--txt);font-weight:600}
+.boton{background:var(--acento);color:var(--acento-txt)!important;text-decoration:none;border-radius:10px;padding:10px 16px}
+footer{padding:40px 0;color:var(--suave);font-size:.85rem}
+[data-en]{display:none}
+html[lang=en] [data-es]{display:none}
+html[lang=en] [data-en]{display:revert}
+html[lang=en] .cifra b[data-en]{display:block}
+@media (max-width:720px){.capturas{grid-template-columns:1fr}td:first-child{white-space:normal}}
+</style>
+</head>
+<body>
+<div class="envoltura">
+
+<header>
+  <div class="marca"><span>wa</span>WaMundo</div>
+  <div class="idioma" role="group" aria-label="Idioma / Language">
+    <button type="button" data-l="es" aria-pressed="true">ES</button>
+    <button type="button" data-l="en" aria-pressed="false">EN</button>
+  </div>
+</header>
+
+<section class="portada">
+  <h1 data-es>Envíos, atención en equipo, IA y SMS desde un solo panel.</h1><h1 data-en>Sending, team support, AI and SMS from one dashboard.</h1>
+  <p class="lema" data-es>Plataforma multi-inquilino de mensajería para negocios de habla hispana. Programa envíos a cientos de grupos y contactos, reparte las conversaciones entre tu equipo y deja que la IA conteste lo repetitivo.</p><p class="lema" data-en>A multi-tenant messaging platform for Spanish-speaking businesses. Schedule sends to hundreds of groups and contacts, share conversations across your team and let AI answer the repetitive questions.</p>
+  <div class="estado"><i></i><span data-es>En producción en <a href="https://wamundo.com">wamundo.com</a> · Sistema propietario de Kusarive Solutions LLC</span><span data-en>In production at <a href="https://wamundo.com">wamundo.com</a> · Proprietary system by Kusarive Solutions LLC</span></div>
+
+  <div class="cifras">
+    <div class="cifra"><b data-es>2,69 M</b><b data-en>2.69 M</b><small data-es>mensajes enviados con éxito</small><small data-en>messages sent successfully</small></div>
+    <div class="cifra"><b data-es>637.000</b><b data-en>637,000</b><small data-es>enviados en los últimos 30 días</small><small data-en>sent in the last 30 days</small></div>
+    <div class="cifra"><b>129</b><small data-es>líneas conectadas por 71 clientes</small><small data-en>connected lines across 71 customers</small></div>
+  </div>
+  <p class="nota" data-es>Cifras reales leídas de la base de datos de producción el 27-oct-2026. Envíos contados desde noviembre de 2025.</p><p class="nota" data-en>Real figures read from the production database on 27-Oct-2026. Sends counted since November 2025.</p>
+</section>
+
+<h2 data-es>Qué hace</h2><h2 data-en>What it does</h2>
+<div class="rejilla">
+  <div class="bloque"><h3 data-es>Envíos masivos y programados</h3><h3 data-en>Bulk and scheduled sending</h3>
+    <p data-es>Por días y horarios, con escalonamiento entre destinos y reparto entre líneas.</p><p data-en>By day and time, with staggering between recipients and load sharing across lines.</p></div>
+  <div class="bloque"><h3 data-es>Bandeja multi-agente</h3><h3 data-en>Multi-agent inbox</h3>
+    <p data-es>Etiquetas, notas internas, respuestas rápidas y reparto de conversaciones entre el equipo.</p><p data-en>Labels, internal notes, quick replies and conversations shared across the team.</p></div>
+  <div class="bloque"><h3 data-es>Automatización con IA</h3><h3 data-en>AI automation</h3>
+    <p data-es>Respuestas por palabra clave, expresión regular o IA, y flujos visuales de varios pasos.</p><p data-en>Replies by keyword, regular expression or AI, and visual multi-step flows.</p></div>
+  <div class="bloque"><h3 data-es>SMS con tu propia SIM</h3><h3 data-en>SMS through your own SIM</h3>
+    <p data-es>Una app convierte un teléfono en pasarela: elige la SIM y sigue enviando con la pantalla apagada.</p><p data-en>An app turns a phone into a gateway: pick the SIM and it keeps sending with the screen off.</p></div>
+  <div class="bloque"><h3 data-es>Hasta 20 líneas</h3><h3 data-en>Up to 20 lines</h3>
+    <p data-es>Varias líneas por cliente, gestionadas desde un único panel y una sola bandeja.</p><p data-en>Several lines per customer, managed from one dashboard and one inbox.</p></div>
+  <div class="bloque"><h3 data-es>API, webhooks y módulo de hosting</h3><h3 data-en>API, webhooks and hosting module</h3>
+    <p data-es>El sistema del cliente envía y recibe, y las empresas de hosting avisan de facturas y tickets.</p><p data-en>The customer's system sends and receives, and hosting companies notify invoices and tickets.</p></div>
+</div>
+
+<h2 data-es>Capturas</h2><h2 data-en>Screenshots</h2>
+<div class="capturas">
+  <div class="pila">
+    <figure><img src="capturas/portada.jpg" alt="Portada / Home page" loading="lazy" width="1280" height="760"><figcaption data-es>Portada pública de wamundo.com.</figcaption><figcaption data-en>Public home page of wamundo.com.</figcaption></figure>
+    <figure><img src="capturas/automatizacion.jpg" alt="Automatización / Automation" loading="lazy" width="1100" height="688"><figcaption data-es>Respuesta automática con coincidencia por IA.</figcaption><figcaption data-en>Automatic reply with AI matching.</figcaption></figure>
+    <figure><img src="capturas/equipo.jpg" alt="Equipo / Team" loading="lazy" width="1100" height="688"><figcaption data-es>Alta de un agente del equipo.</figcaption><figcaption data-en>Adding a team agent.</figcaption></figure>
+  </div>
+  <div class="pila">
+    <figure><img src="capturas/chat-movil.jpg" alt="Chat móvil / Mobile chat" loading="lazy" width="508" height="1100"><figcaption data-es>La bandeja de chats en el móvil.</figcaption><figcaption data-en>The chat inbox on mobile.</figcaption></figure>
+  </div>
+</div>
+
+<h2 data-es>Cómo está construido</h2><h2 data-en>How it is built</h2>
+<div data-es><div class="flujo"><span>Panel web y API</span><em>→</em><span>Servicio de mensajería en 20 instancias</span><em>→</em><span>Red de mensajería</span><em>·</em><span>App pasarela SMS</span><em>·</em><span>App de chat</span></div></div>
+<div data-en><div class="flujo"><span>Web dashboard and API</span><em>→</em><span>Messaging service on 20 instances</span><em>→</em><span>Messaging network</span><em>·</em><span>SMS gateway app</span><em>·</em><span>Chat app</span></div></div>
+<p class="nota" data-es>El panel no tiene estado; las sesiones, que deben vivir de forma continua, las mantiene un servicio aparte en Go.</p><p class="nota" data-en>The dashboard is stateless; sessions, which must stay alive continuously, are kept by a separate service written in Go.</p>
+
+<h2 data-es>Garantías técnicas</h2><h2 data-en>Technical guarantees</h2>
+<table>
+  <tr><td data-es>Sesiones</td><td data-en>Sessions</td><td><span data-es>Se recuperan solas al arrancar, y revincular crea una sesión nueva sin cortar la que funciona.</span><span data-en>They recover on their own at startup, and re-linking creates a new session without cutting the working one.</span></td></tr>
+  <tr><td data-es>Reinicios</td><td data-en>Restarts</td><td><span data-es>Una instancia que se apaga devuelve a la cola lo que no empezó: ningún envío se pierde.</span><span data-en>An instance shutting down returns unstarted work to the queue: no send is lost.</span></td></tr>
+  <tr><td data-es>Seguridad</td><td data-en>Security</td><td><span data-es>Protección CSRF, API por clave, puente de soporte firmado con HMAC y caché cifrada en la app.</span><span data-en>CSRF protection, key-based API, HMAC-signed support bridge and an encrypted cache in the app.</span></td></tr>
+  <tr><td data-es>Calidad</td><td data-en>Quality</td><td><span data-es>Pruebas automáticas del servicio de mensajería: identidad, eventos, notas de voz, cola y revinculación.</span><span data-en>Automated tests for the messaging service: identity, events, voice notes, queue and re-linking.</span></td></tr>
+</table>
+
+<h2 data-es>Construido con</h2><h2 data-en>Built with</h2>
+<table>
+  <tr><td>PHP</td><td><span data-es>Panel web, API, automatizaciones, IA y facturación (75.000 líneas), y el módulo de hosting (11.800).</span><span data-en>Web dashboard, API, automation, AI and billing (75,000 lines), and the hosting module (11,800).</span></td></tr>
+  <tr><td>HTML · CSS · JavaScript</td><td><span data-es>Plantillas e interfaz del panel y del sitio público (42.000 líneas).</span><span data-en>Templates and interface for the dashboard and public site (42,000 lines).</span></td></tr>
+  <tr><td>Go</td><td><span data-es>El servicio de mensajería, con sus pruebas (12.000 líneas).</span><span data-en>The messaging service, with its tests (12,000 lines).</span></td></tr>
+  <tr><td>Dart · Kotlin</td><td><span data-es>Las dos apps móviles (14.900 líneas) y el servicio nativo de la pasarela SMS (1.000).</span><span data-en>The two mobile apps (14,900 lines) and the native SMS gateway service (1,000).</span></td></tr>
+  <tr><td>SQL</td><td><span data-es>La base de datos, con aislamiento por inquilino.</span><span data-en>The database, with per-tenant isolation.</span></td></tr>
+</table>
+
+<h2 data-es>Contacto</h2><h2 data-en>Contact</h2>
+<div class="contacto">
+  <div><strong>Rafael Blanco</strong><br><span data-es>para Kusarive Solutions LLC</span><span data-en>for Kusarive Solutions LLC</span></div>
+  <a href="https://wamundo.com">wamundo.com</a>
+  <a href="mailto:info@wamundo.com">info@wamundo.com</a>
+  <a class="boton" href="https://wa.me/13177790136">WhatsApp +1 317 779 0136</a>
+</div>
+
+<footer>© 2026 Kusarive Solutions LLC.</footer>
+</div>
+
+<script>
+(function(){
+  var html=document.documentElement;
+  function poner(l){
+    html.lang=l;
+    document.querySelectorAll('.idioma button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.l===l)});
+    try{localStorage.setItem('idioma',l)}catch(e){}
+  }
+  document.querySelectorAll('.idioma button').forEach(function(b){b.addEventListener('click',function(){poner(b.dataset.l)})});
+  var g=null;try{g=localStorage.getItem('idioma')}catch(e){}
+  poner(g||((navigator.language||'es').slice(0,2)==='en'?'en':'es'));
+})();
+</script>
+</body>
+</html>
