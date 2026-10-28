@@ -7,7 +7,8 @@
 **Status:** in production at [wamundo.com](https://wamundo.com) ·
 **Proprietary system** by Kusarive Solutions LLC ·
 [Versión en español](README.md) ·
-[Presentation page](https://rjblancos.github.io/wamundo-showcase/)
+[Presentation page](https://rjblancos.github.io/wamundo-showcase/) ·
+**[Download the presentation as PDF](presentacion/WaMundo-presentacion.pdf)** (15 slides, in Spanish)
 
 ---
 
@@ -143,5 +144,6 @@ Rafael Blanco, for Kusarive Solutions LLC
 - Web: [wamundo.com](https://wamundo.com)
 - Email: info@wamundo.com
 - WhatsApp: [+1 317 779 0136](https://wa.me/13177790136)
+- Presentation: [15-slide PDF](presentacion/WaMundo-presentacion.pdf) (in Spanish)
 
 © 2026 Kusarive Solutions LLC. See [LICENSE](LICENSE).
