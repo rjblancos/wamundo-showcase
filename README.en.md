@@ -146,4 +146,10 @@ Rafael Blanco, for Kusarive Solutions LLC
 - WhatsApp: [+1 317 779 0136](https://wa.me/13177790136)
 - Presentation: [13-slide PDF](presentacion/WaMundo-presentacion.pdf) (in Spanish)
 
+## What's new
+
+- **27-Oct-2026** · Showcase published, with a downloadable PDF presentation.
+
+Full log: [CHANGELOG.md](CHANGELOG.md).
+
 © 2026 Kusarive Solutions LLC. See [LICENSE](LICENSE).
