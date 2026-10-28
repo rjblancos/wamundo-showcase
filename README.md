@@ -9,7 +9,7 @@
 **Sistema propietario** de Kusarive Solutions LLC ·
 [English version](README.en.md) ·
 [Página de presentación](https://rjblancos.github.io/wamundo-showcase/) ·
-**[Descargar la presentación en PDF](presentacion/WaMundo-presentacion.pdf)** (15 diapositivas)
+**[Descargar la presentación en PDF](presentacion/WaMundo-presentacion.pdf)** (13 diapositivas)
 
 ---
 
@@ -145,6 +145,6 @@ Rafael Blanco, para Kusarive Solutions LLC
 - Web: [wamundo.com](https://wamundo.com)
 - Correo: info@wamundo.com
 - WhatsApp: [+1 317 779 0136](https://wa.me/13177790136)
-- Presentación: [PDF de 15 diapositivas](presentacion/WaMundo-presentacion.pdf)
+- Presentación: [PDF de 13 diapositivas](presentacion/WaMundo-presentacion.pdf)
 
 © 2026 Kusarive Solutions LLC. Ver [LICENSE](LICENSE).
