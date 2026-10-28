@@ -140,8 +140,6 @@ Cifras reales leídas de la base de datos de producción el 27-oct-2026:
 
 ## Contacto
 
-Rafael Blanco, para Kusarive Solutions LLC
-
 - Web: [wamundo.com](https://wamundo.com)
 - Correo: info@wamundo.com
 - WhatsApp: [+1 317 779 0136](https://wa.me/13177790136)

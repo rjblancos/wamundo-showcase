@@ -139,8 +139,6 @@ Real figures read from the production database on 27-Oct-2026:
 
 ## Contact
 
-Rafael Blanco, for Kusarive Solutions LLC
-
 - Web: [wamundo.com](https://wamundo.com)
 - Email: info@wamundo.com
 - WhatsApp: [+1 317 779 0136](https://wa.me/13177790136)
